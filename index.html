@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <img src="Palace.png" alt="Hotel Logo" />
+      <span>Palace Paradise</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#menu-section">Hotel Menu</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#contact-section">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hotel Banner -->
+<div class="banner">
+  <img src="hotel.jpeg" alt="Hotel Image" />
+</div>
+
+<h1 id="menu-section">🍽️ Hotel Management - Single Table (Waiter: Raj)</h1>
+
+<div class="container">
+  <!-- Billing Table -->
+  <div class="billing-section">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item</th>
+          <th>Price (₹)</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="menu"></tbody>
+    </table>
+
+    <div class="discount">
+      <label for="discount">Festival Discount (%): </label>
+      <input type="number" id="discount" value="0" min="0" max="100" />
+    </div>
+
+    <button onclick="calculateTotal()">Calculate Bill</button>
+
+    <div class="summary" id="summary">
+      <strong>Total: ₹0</strong>
+    </div>
+  </div>
+
+  <!-- Food Image -->
+  <div class="food-image">
+    <img src="images.jpg" alt="Delicious Food" />
+    <img src="thali.jpg" alt="Delicious Food" />
+    <img src="paneer.jpg" alt="Delicious Food" />
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about-section" class="info-section">
+  <h2>About Us</h2>
+  <p>
+    Welcome to Palace Paradise! We serve delicious food with warm hospitality.
+    Our mission is to provide you a comfortable dining experience.
+  </p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact-section" class="info-section">
+  <h2>Contact Us</h2>
+  <p>Email: contact@PalaceParadise.com</p>
+  <p>Phone: +91 12345 67890</p>
+  <p>Address: 123, MG Road, Bhopal, India</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
